@@ -38,12 +38,12 @@ const nav = () => {
         <li className="nav-item">
           <a className="nav-link active">Contact</a>
         </li>
-        {/* <li className="nav-item">
+        <li className="nav-item">
           <Link className="nav-link active" to="/signin"> Creat account</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link active" to="/signup">Sign up</Link>
-        </li> */}
+        </li>
       </ul>
     </div>
   </div>
