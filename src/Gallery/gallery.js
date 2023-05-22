@@ -9,7 +9,7 @@ const gallery = () => {
   return (
           
     <div className="container-fluid">
-      <div ><h1 className='text-center'>Gallery <hr/></h1></div>
+      <div ><h1 className='text-center'>Gallery </h1><hr/></div>
     <div className="row">
       <div className="column">
         <img src={img1} />
