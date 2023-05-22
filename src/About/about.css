@@ -1,0 +1,32 @@
+.about-us {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-us img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .about-us h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .about-us p {
+    font-size: 16px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about-us .row {
+      flex-direction: column;
+    }
+  
+    .about-us img {
+      margin-bottom: 10px;
+    }
+  }
+  

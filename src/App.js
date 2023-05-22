@@ -5,6 +5,8 @@ import Footer from "./Footer/Footer"
 import Reservation from './Reservation/Reservation'
 import Home from "./Home/Home"
 import Menu from "./Menu/Menu"
+import Gallery from "./Gallery/gallery"
+import Catering from './Catering/catering'
 import About from "./About/about"
 import {
   BrowserRouter,
@@ -25,7 +27,9 @@ function App() {
     <Route path="/menu" element={ <Menu/>}/>
     <Route path="/signup" element={ <Login/>}/>
     <Route path="/signin" element={ <Siginin/>}/>
-    {/* <Route path='/about' element = {<About/>}/> */}
+    <Route path='/about' element = {<About/>}/>
+    <Route path='/gallery' element = {<Gallery />}/>
+    <Route path='/catering' element = {<Catering />}/>
 
       </Routes>
       <Footer/>

@@ -33,10 +33,10 @@ const nav = () => {
           <Link className="nav-link active" to="/reservation"> Reservation</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link active" href="#">Catering</a>
+          <Link className="nav-link active" to='/catering'>Catering</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link active">Contact</a>
+          <Link className="nav-link active"to ='/gallery'>Gallery</Link>
         </li>
         {/* <li className="nav-item">
           <Link className="nav-link active" to="/signin"> Creat account</Link>
