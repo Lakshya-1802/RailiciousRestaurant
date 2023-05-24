@@ -41,9 +41,7 @@ const Footer = () => {
             <p>
               <a className="text-white">About</a>
             </p>
-            {/* <p>
-              <a className="text-white">Bootstrap Angular</a>
-            </p> */}
+           
           </div>
           {/* <!-- Grid column --> */}
 
@@ -58,14 +56,12 @@ const Footer = () => {
               <a className="text-white">Reservation</a>
             </p>
             <p>
-              <a className="text-white">Catering</a>
+              <a className="text-white">Franchise</a>
             </p>
             <p>
-              <a className="text-white">Party</a>
+              <a className="text-white">Catering</a>
             </p>
-            {/* <p>
-              <a className="text-white">Help</a>
-            </p> */}
+            
           </div>
 
           {/* <!-- Grid column --> */}
@@ -75,9 +71,9 @@ const Footer = () => {
           <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
             <h6 className="text-uppercase mb-4 font-weight-bold">Connect With Us</h6>
             <p><i className="fas fa-home mr-3"></i> Metro Station, Right Under, Sector 137, Noida, Uttar Pradesh 201305</p>
-            <p><i className="fas fa-envelope mr-3"></i> info@gmail.com</p>
-            <p><i className="fas fa-phone mr-3"></i> + 01 234 567 89</p>
-            <p><i className="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            <p><i className="fas fa-envelope mr-3"></i> railiciousnoida@gmail.com</p>
+            <p><i className="fas fa-phone mr-3"></i> + 96 979 248 25</p>
+            {/* <p><i className="fas fa-print mr-3"></i> + 01 234 567 89</p> */}
           </div>
           {/* <!-- Grid column --> */}
         </div>
@@ -106,31 +102,26 @@ const Footer = () => {
             {/* <!-- Facebook --> */}
             <a
                className="btn btn-outline-light text-white btn-floating m-1"
-               
+               href='https://www.facebook.com/railiciousncr?mibextid=ZbWKwL'
+               target="_blank" rel="noopener noreferrer"
                role="button"
                ><i className="fab fa-facebook-f"></i
               ></a>
 
-            {/* <!-- Twitter --> */}
+            {/* <!-- Map --> */}
             <a
                className="btn btn-outline-light text-white btn-floating m-1"
-               
+               href='https://maps.app.goo.gl/JkMEJyQGqpjQJ33B7'
+               target="_blank" rel="noopener noreferrer"
                role="button"
-               ><i className="fab fa-twitter"></i
-              ></a>
-
-            {/* <!-- Google --> */}
-            <a
-               className="btn btn-outline-light text-white btn-floating m-1"
-               
-               role="button"
-               ><i className="fab fa-google"></i
-              ></a>
+               ><i className="fa-sharp fa-solid fa-location-dot"></i>
+              </a>
 
             {/* <!-- Instagram --> */}
             <a
                className="btn btn-outline-light text-white btn-floating m-1"
-              
+               href='https://instagram.com/railiciousncr?igshid=MmJiY2I4NDBkZg=='
+               target="_blank" rel="noopener noreferrer"
                role="button"
                ><i className="fab fa-instagram"></i
               ></a>
