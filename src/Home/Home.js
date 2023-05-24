@@ -21,7 +21,7 @@ const Home = () => {
         backgroundSize: "cover",
         maxWidth: "100%",
         backgroundAttachment: "fixed",
-        backgroundPosition:" center center",
+        backgroundPosition:" center cente",
         
       }}>
         <div className="rotating-text-wrapper">

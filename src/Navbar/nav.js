@@ -4,14 +4,14 @@ import logo from "./RALICIOUS_LOGO-removebg-preview.png"
 import { Link } from 'react-router-dom'
 const nav = () => {
   return (
-    
+    <>
 
-    <div className='header ' style={{backgroundColor:"rgba(0,0,0,0.2)"}} >
+    <div className='header ' style={{color:"white" ,backgroundColor:"rgba(0,0,0,0.2)"}} >
       <nav className="navbar navbar-expand-md  ">
   <div className=" container-fluid">
-    <a className="navbar-brand d-md-none" href="#">
+    <Link className="navbar-brand d-md-none" to='/'>
       <img src={logo} alt=""/>
-    </a>
+    </Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -26,14 +26,14 @@ const nav = () => {
         <li className="nav-item">
           <Link className="nav-link active" to="/about">About</Link>
         </li>
-        <a className="navbar-brand d-none d-md-block" href="#">
+        <Link className="navbar-brand d-none d-md-block" to='/'>
           <img src={logo} alt=""/>
-        </a>
+        </Link>
         <li className="nav-item">
           <Link className="nav-link active" to="/reservation"> Reservation</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link active" to='/catering'>Catering</Link>
+          <Link className="nav-link active" to='/contact'>Contact</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link active"to ='/gallery'>Gallery</Link>
@@ -51,8 +51,12 @@ const nav = () => {
 
  </div>
 
+ 
 
 
+
+ 
+ </>
   )
 }
 
