@@ -16,83 +16,83 @@ const gallery = () => {
  <div ><h1 className='text-center'>Check Out Our Gallery </h1><hr/></div>
  <div>
       {/* AMBIENCE */}
-  <section class="delicacies">
+  <section className="delicacies">
         <h2>Our Ambience</h2>
        
-        <div class="row delicacies-row">
-          <div class="col-sm-6 col-md-4 delicacy">
+        <div className="row delicacies-row">
+          <div className="col-sm-6 col-md-4 delicacy">
             <img src={img1} alt="Delicacy 1" />
            
           </div>
-          <div class="col-sm-6 col-md-4 delicacy">
+          <div className="col-sm-6 col-md-4 delicacy">
             <img src={img1} alt="Delicacy 1" />
            
           </div>
-          <div class="col-sm-6 col-md-4 delicacy">
+          <div className="col-sm-6 col-md-4 delicacy">
             <img src={img1} alt="Delicacy 1" />
             
           </div>
-          {/* <div class="col-sm-6 col-md-4 delicacy">
+          {/* <div className="col-sm-6 col-md-4 delicacy">
             <img src={img1} alt="Delicacy 1" />
             
           </div> */}
         </div>
         <Link to='/ambiencegallery'>
-        <button type="button" class="btn btn-secondary">More</button>
+        <button type="button" className="btn btn-secondary">More</button>
         </Link>
           
       </section>
       {/*Food Gallery*/}
-      <section class="delicacies">
+      <section className="delicacies">
         <h2> Our Food</h2>
        
-        <div class="row delicacies-row">
-          <div class="col-sm-6 col-md-4 delicacy">
+        <div className="row delicacies-row">
+          <div className="col-sm-6 col-md-4 delicacy">
             <img src={img1} alt="Delicacy 1" />
            
           </div>
-          <div class="col-sm-6 col-md-4 delicacy">
+          <div className="col-sm-6 col-md-4 delicacy">
             <img src={img1} alt="Delicacy 1" />
            
           </div>
-          <div class="col-sm-6 col-md-4 delicacy">
+          <div className="col-sm-6 col-md-4 delicacy">
             <img src={img1} alt="Delicacy 1" />
             
           </div>
-          {/* <div class="col-sm-6 col-md-4 delicacy">
+          {/* <div className="col-sm-6 col-md-4 delicacy">
             <img src={img1} alt="Delicacy 1" />
             
           </div> */}
         </div>
         <Link to='/foodgallery'>
-        <button type="button" class="btn btn-secondary">More</button>
+        <button type="button" className="btn btn-secondary">More</button>
         </Link>
           
       </section>
       {/*Other Photos*/}
-      <section class="delicacies">
+      <section className="delicacies">
         <h2>Videos</h2>
        
-        <div class="row delicacies-row">
-          <div class="col-sm-6 col-md-4 delicacy">
+        <div className="row delicacies-row">
+          <div className="col-sm-6 col-md-4 delicacy">
             <img src={img1} alt="Delicacy 1" />
            
           </div>
-          <div class="col-sm-6 col-md-4 delicacy">
+          <div className="col-sm-6 col-md-4 delicacy">
             <img src={img1} alt="Delicacy 1" />
            
           </div>
-          <div class="col-sm-6 col-md-4 delicacy">
+          <div className="col-sm-6 col-md-4 delicacy">
             <img src={img1} alt="Delicacy 1" />
             
           </div>
-          {/* <div class="col-sm-6 col-md-4 delicacy">
+          {/* <div className="col-sm-6 col-md-4 delicacy">
             <img src={img1} alt="Delicacy 1" />
             
           </div> */}
         </div>
         <Link to='/foodgallery'>
-        <button type="button" class="btn btn-secondary">More</button>
+        <button type="button" className="btn btn-secondary">More</button>
         </Link>
           
       </section>

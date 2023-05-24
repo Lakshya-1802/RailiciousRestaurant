@@ -3,11 +3,11 @@
     text-align: center;
   }
   
-  .about-us img {
+  .about-us video {
     width: 100%;
     /* max-width: 420px; */
     max-height: 360px;
-    border-radius: 5px;
+    
   }
   
   .about-us h2 {
@@ -24,7 +24,7 @@
       flex-direction: column;
     }
   
-    .about-us img {
+    .about-us video {
       margin-bottom: 10px;
     }
   }
