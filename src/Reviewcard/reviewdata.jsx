@@ -1,18 +1,18 @@
 const reviewsData = [
   {
-    name: "John Doe",
+    name: "Ajay",
     image: 'public\assets\catering 3.jpg',
-    comment: "The coffee here is exceptional! I love the cozy atmosphere and friendly staff."
+    comment: `Train with food... Kids love the concept. Even the elders had great time. `
   },
   {
-    name: "Jane Smith",
+    name: "AJ",
     image: "reviewer2.jpg",
-    comment: "Seven Grams Caffe never disappoints. Their pastries are heavenly, and the coffee is always on point!"
+    comment: "Classic Indian food with lovely retro songs. Superb playlist.Overall best experience."
   },
   {
-    name: "Mike Johnson",
+    name: "Gargi",
     image: "reviewer3.jpg",
-    comment: "I've been a regular at Seven Grams Caffe for years. Their attention to detail and quality is unmatched."
+    comment: " Main course food was too good. Overall worth an experience. Must visit for kids."
   }
 ];
 

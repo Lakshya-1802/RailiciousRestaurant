@@ -12,7 +12,7 @@ import Contact from './Contact/contact'
 import Franchise from './Franch/franch'
 import FoodGallery from './Gallery/food'
 import AmbienceGallery from './Gallery/ambience'
-import OtherPhotos from './Gallery/otherphotos'
+import VideoGallery from './Gallery/videosgallery'
 import {
   BrowserRouter,
   Routes,
@@ -38,7 +38,7 @@ function App() {
     <Route path='/contact' element = {<Franchise/>}/>
     <Route path='/foodgallery' element={<FoodGallery/>}/>
     <Route path='/ambiencegallery' element={<AmbienceGallery/>}/>
-    <Route path='/otherphotos' element={<OtherPhotos/>}/>
+    <Route path='/videogallery' element={<VideoGallery/>}/>
       </Routes>
       <Footer/>
   </BrowserRouter>

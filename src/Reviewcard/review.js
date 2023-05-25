@@ -1,27 +1,9 @@
 import React, { useState } from 'react';
-// import reviewsData from './reviewdata'; // Import the data for reviews
+import reviewsData from './reviewdata'; // Import the data for reviews
 import './review.css'
-import paneer from '../Images/Delicacies/paneer.jpg' 
-import pizza from '../Images/Delicacies/pizza.jpg' 
-import veg from '../Images/Delicacies/veg (2).jpg' 
 
-const reviewsData = [
-    {
-      name: "John Doe",
-      image: {paneer},
-      comment: "The coffee here is exceptional! I love the cozy atmosphere and friendly staff."
-    },
-    {
-      name: "Jane Smith",
-      image: {paneer},
-      comment: "Seven Grams Caffe never disappoints. Their pastries are heavenly, and the coffee is always on point!"
-    },
-    {
-      name: "Mike Johnson",
-      image: {paneer},
-      comment: "I've been a regular at Seven Grams Caffe for years. Their attention to detail and quality is unmatched."
-    }
-  ];
+
+
 
 const ReviewsCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
