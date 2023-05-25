@@ -1,10 +1,7 @@
 import React from 'react'
 import "./gallery.css"
-import img1 from "../Images/Galleryimg/5.jpg"
-import img2 from "../Images/Galleryimg/2.jpg"
-import img3 from "../Images/Galleryimg/3.jpg"
-import img4 from "../Images/Galleryimg/4.jpg"
-import img5 from "../Images/Galleryimg/5.jpg"
+import img1 from '../Images/Galleryimg/Ambiencegallery/ambience11.jpg'
+
 import {Link} from 'react-router-dom'
 // import Food from './food'
 // import Ambience from './ambience'

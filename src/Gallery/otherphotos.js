@@ -1,10 +1,10 @@
 import React from 'react'
 import './otherphoto.css'
 import img1 from "../Images/Galleryimg/1.jpg"
-import img2 from "../Images/Galleryimg/2.jpg"
+import img2 from "../Images/Galleryimg/1.jpg"
 import img3 from "../Images/Galleryimg/3.jpg"
 import img4 from "../Images/Galleryimg/4.jpg"
-import img5 from "../Images/Galleryimg/5.jpg"
+import img5 from "../Images/Galleryimg/1.jpg"
 const otherphotos = () => {
   return (
     <div className="container-fluid">

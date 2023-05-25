@@ -1,127 +1,61 @@
-import React from 'react'
+import React, { useState } from 'react';
+// import reviewsData from './reviewdata'; // Import the data for reviews
 import './review.css'
-import img1 from './set_1.jpg'
+import paneer from '../Images/Delicacies/paneer.jpg' 
+import pizza from '../Images/Delicacies/pizza.jpg' 
+import veg from '../Images/Delicacies/veg (2).jpg' 
 
+const reviewsData = [
+    {
+      name: "John Doe",
+      image: {paneer},
+      comment: "The coffee here is exceptional! I love the cozy atmosphere and friendly staff."
+    },
+    {
+      name: "Jane Smith",
+      image: {paneer},
+      comment: "Seven Grams Caffe never disappoints. Their pastries are heavenly, and the coffee is always on point!"
+    },
+    {
+      name: "Mike Johnson",
+      image: {paneer},
+      comment: "I've been a regular at Seven Grams Caffe for years. Their attention to detail and quality is unmatched."
+    }
+  ];
 
+const ReviewsCarousel = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
 
+  const nextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide === reviewsData.length - 1 ? 0 : prevSlide + 1));
+  };
 
-const review = () => {
+  const prevSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide === 0 ? reviewsData.length - 1 : prevSlide - 1));
+  };
+
   return (
-    
-<div className="testimonial-slider">
-    <div id="carouselExampleControls" className="carousel carousel-dark" data-bs-ride="carousel">
-        <div className="container-fluid">
-            <div className="row">
-                <div className="col-md-4">
-                    <div className="testimonial-title">
-                        <i className="bi bi-quote display-2"></i>
-                        <h2 className="fw-bold display-6">What our customers say</h2>
-                    </div>
-                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <div className="col-md-8">
-                    <div className="carousel-inner">
-                        <div className="carousel-item active">
-                            <div className="card">
-                                <div className="img-wrapper"><img src={img1} className="d-block w-100" alt="..."/> </div>
-                                <div className="card-body">
-                                    <h5 className="card-title">Card title 1</h5>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <p className="card-text">"Some dummy text you don't need to read. Since you have decided to read, do like, share, comment and subscribe to Coding Yaar."</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="carousel-item">
-                            <div className="card">
-                                <div className="img-wrapper"><img src={img1} className="d-block w-100" alt="..."/> </div>
-                                <div className="card-body">
-                                    <h5 className="card-title">Card title 2</h5>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <p className="card-text">"Some dummy text you don't need to read. Since you have decided to read, do like, share, comment and subscribe to Coding Yaar."</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="carousel-item">
-                            <div className="card">
-                                <div className="img-wrapper"><img src={img1} className="d-block w-100" alt="..."/> </div>
-                                <div className="card-body">
-                                    <h5 className="card-title">Card title 3</h5>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <p className="card-text">"Some dummy text you don't need to read. Since you have decided to read, do like, share, comment and subscribe to Coding Yaar."</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="carousel-item">
-                            <div className="card">
-                                <div className="img-wrapper"><img src={img1} className="d-block w-100" alt="..."/> </div>
-                                <div className="card-body">
-                                    <h5 className="card-title">Card title 4</h5>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <p className="card-text">"Some dummy text you don't need to read. Since you have decided to read, do like, share, comment and subscribe to Coding Yaar."</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="carousel-item">
-                            <div className="card">
-                                <div className="img-wrapper"><img src={img1} className="d-block w-100" alt="..."/> </div>
-                                <div className="card-body">
-                                    <h5 className="card-title">Card title 5</h5>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <p className="card-text">"Some dummy text you don't need to read. Since you have decided to read, do like, share, comment and subscribe to Coding Yaar."</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="carousel-item">
-                            <div className="card">
-                                <div className="img-wrapper"><img src={img1} className="d-block w-100" alt="..."/> </div>
-                                <div className="card-body">
-                                    <h5 className="card-title">Card title 6</h5>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <i className="bi bi-star-fill text-warning pe-1"></i>
-                                    <p className="card-text">"Some dummy text you don't need to read. Since you have decided to read, do like, share, comment and subscribe to Coding Yaar."</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section className="reviews-section">
+      <div className="container">
+        <h2 className='text-center'>Customer Reviews</h2><hr/>
+        <div className="reviews-carousel">
+          {reviewsData.map((review, index) => (
+            <div className={`review ${index === currentSlide ? 'active' : ''}`} key={index}>
+              <img src={review.image} alt={`Reviewer ${index + 1}`} />
+              <h4>{review.name}</h4>
+              <p className="review-text">{review.comment}</p>
             </div>
+          ))}
+          <button className="carousel-control prev" onClick={prevSlide}>
+            &#8249;
+          </button>
+          <button className="carousel-control next" onClick={nextSlide}>
+            &#8250;
+          </button>
         </div>
-    </div>
-</div>
+      </div>
+    </section>
+  );
+};
 
-    
-    
-  )
-}
-
-export default review
+export default ReviewsCarousel;
