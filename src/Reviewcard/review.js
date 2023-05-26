@@ -16,6 +16,9 @@ const ReviewsCarousel = () => {
     setCurrentSlide((prevSlide) => (prevSlide === 0 ? reviewsData.length - 1 : prevSlide - 1));
   };
 
+  const logC = () => {
+    console.log(reviewsData,'data');
+  }
   return (
     <section className="reviews-section">
       <div className="container">
@@ -25,7 +28,7 @@ const ReviewsCarousel = () => {
             <div className={`review ${index === currentSlide ? 'active' : ''}`} key={index}>
               <img src={review.image} alt={`Reviewer ${index + 1}`} />
               <h4>{review.name}</h4>
-              <p className="review-text">{review.comment}</p>
+              <p onClick={logC} className="review-text">{review.comment}</p>
             </div>
           ))}
           <button className="carousel-control prev" onClick={prevSlide}>
