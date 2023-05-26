@@ -20,7 +20,6 @@ const franch = () => {
                         <h2 className='text-center' style={{color:"brown"}}>Get a Franchise Now</h2>
                         <form>
                             <div className="mb-3 text-start">
-                                {/* <label for="name" className="form-label  mt-2" >Enter your name</label> */}
                                 <input type="text" className="form-control" id="name" placeholder='Name' name="name" />
                             </div>
                             <div className="mb-3 text-start">
@@ -28,16 +27,12 @@ const franch = () => {
                                 <input type="text" className="form-control" id="number" placeholder='Contact Number' name="number" />
                             </div>
                             <div className="mb-3 text-start">
-                                {/* <label for="email" className="form-label  " >Enter your email Address</label> */}
                                 <input type="email" className="form-control" id="email" name="email" placeholder='Enter your email Address' aria-describedby="emailHelp" />
-                                {/* <div id="emailHelp" className="form-text" style={{color:"#e88c04"}}>We'll never share your email with anyone else.</div> */}
                             </div>
                             <div className="mb-3 text-start">
-                                {/* <label for="name" className="form-label  mt-2" >Enter your name</label> */}
                                 <input type="text" className="form-control" id="name" placeholder='Where do you want Railicios outlet? ' name="name" />
                             </div>
                             <div className="mb-3 text-start">
-                                {/* <label for="msg" className="form-label  " >Enter your message</label> */}
                                 <textarea className="form-control  " name="msg" id="msg" placeholder='Enter your message' cols="30" rows="3" style={{ marginLeft: "12px" }} ></textarea>
 
                             </div>

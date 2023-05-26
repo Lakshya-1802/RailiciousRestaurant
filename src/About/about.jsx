@@ -1,5 +1,5 @@
 import React from 'react'
-import img from './about.jpeg'
+
 import video from './video.mp4'
 import './about.css'
 const about = () => {
@@ -10,7 +10,7 @@ const about = () => {
     <div className='text-center'><h1>About us <hr /></h1> </div>
     <div className="row">
       <div className="col-md-6">
-        {/* <img src={img} alt="About Us Image"/> */}
+     
         <video  autoPlay loop muted>
   <source src={video} type="video/mp4"/>
 </video>

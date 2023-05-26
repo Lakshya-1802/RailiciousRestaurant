@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './reservation.css'
 import { toast,ToastContainer } from "react-toastify";
+
+
 const Reservation = () => {
     const [data,setData]= useState({
         title:"",
@@ -51,14 +53,14 @@ const Reservation = () => {
     <div>
         
         <section className = "banner">
-            <h2>BOOK YOUR TABLE NOW</h2>
+            <h2 style={{fontSize:"60px"}}>Book Your Table Now</h2>
             <div className = "card-container">
                 <div className = "card-img">
                     
                 </div>
 
                 <div className = "card-content">
-                    <h3>Reservation</h3>
+                    <h3 style={{fontFamily:"Calligraffitti', cursive"}}>Reservation</h3>
                     <form onSubmit={sendData}>
                         <div className = "form-row">
                             <select name = "days">
