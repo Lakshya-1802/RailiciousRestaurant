@@ -17,24 +17,24 @@ const otherphotos = () => {
 
       <div className="row delicacies-row">
         <div className="col-sm-6 col-md-4 delicacy" >
-          <video className='video' width="216" height="384"  >
+          <video className='video' width="216" height="384" controls  >
             <source src={V1} type="video/mp4" />
           </video>
         </div>
         <div className="col-sm-6 col-md-4 delicacy">
-          <video className='video' width="216" height="384" >
+          <video className='video' width="216" height="384" controls >
             <source src={V2} type="video/mp4" />
           </video>
 
         </div>
         <div className="col-sm-6 col-md-4 delicacy">
-          <video className='video' width="216" height="384" >
+          <video className='video' width="216" height="384" controls >
             <source src={V3} type="video/mp4" />
           </video>
 
         </div>
         <div className="col-sm-6 col-md-4 delicacy">
-          <video className='video' width="216" height="384" >
+          <video className='video' width="216" height="384" controls >
             <source src={V4} type="video/mp4" />
           </video>
 
@@ -43,56 +43,31 @@ const otherphotos = () => {
       </div>
       <div className="row delicacies-row">
         <div className="col-sm-6 col-md-4 delicacy" >
-          <video className='video' width="216" height="384"  >
+          <video className='video' width="216" height="384" controls  >
             <source src={V8} type="video/mp4" />
           </video>
         </div>
         <div className="col-sm-6 col-md-4 delicacy">
-          <video className='video' width="216" height="384" >
+          <video className='video' width="216" height="384" controls >
             <source src={V5} type="video/mp4" />
           </video>
 
         </div>
         <div className="col-sm-6 col-md-4 delicacy">
-          <video className='video' width="216" height="384" >
+          <video className='video' width="216" height="384" controls >
             <source src={V6} type="video/mp4" />
           </video>
 
         </div>
         <div className="col-sm-6 col-md-4 delicacy">
-          <video className='video' width="216" height="384" >
+          <video className='video' width="216" height="384" controls >
             <source src={V7} type="video/mp4" />
           </video>
 
         </div>
 
       </div>
-      {/* <div className="row delicacies-row">
-        <div className="col-sm-6 col-md-4 delicacy" >
-          <video className='video' width="216" height="384"  >
-            <source src={V9} type="video/mp4" />
-          </video>
-        </div>
-        <div className="col-sm-6 col-md-4 delicacy">
-          <video className='video' width="216" height="384" >
-            <source src={V9} type="video/mp4" />
-          </video>
-
-        </div>
-        <div className="col-sm-6 col-md-4 delicacy">
-          <video className='video' width="216" height="384" >
-            <source src={V9} type="video/mp4" />
-          </video>
-
-        </div>
-        <div className="col-sm-6 col-md-4 delicacy">
-          <video className='video' width="216" height="384" >
-            <source src={V9} type="video/mp4" />
-          </video>
-
-        </div>
-
-      </div> */}
+     
 
 
     </section>
