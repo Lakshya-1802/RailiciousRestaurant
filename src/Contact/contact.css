@@ -1,67 +1,55 @@
 .contact {
-    padding: 60px 0;
-    background-color: #f9f9f9;
+  padding: 70px 0;
+
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.info-item {
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.info-item i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.info-item span {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .info-item {
+    flex-basis: 50%;
   }
-  
-  .contact .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .row span {
+    font-size: 15px;
   }
-  
-  .contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .contact-info-map {
-    width: 50%;
-    padding: 0 0px;
-  }
-  
-  .contact-info-details {
-    width: 50%;
-    padding: 0 20px;
-  }
-  
-  .contact-info-details h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .contact-info-details p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  .contact-info-details ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .contact-info-details ul li {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  .contact-info-details ul li i {
-    margin-right: 10px;
-  }
-  
-  @media (max-width: 768px) {
-    .contact-info {
-      flex-direction: column;
-    }
-    
-    .contact-info-map,
-    .contact-info-details {
-      width: 100%;
-      padding: 0;
-    }
-  }
+}
+
 
   /* map */
 .mapouter{

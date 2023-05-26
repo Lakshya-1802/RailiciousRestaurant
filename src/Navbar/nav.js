@@ -7,9 +7,9 @@ const nav = () => {
     <>
 
     <div className='header ' style={{color:"white" ,backgroundColor:"rgba(0,0,0,0.2)"}} >
-      <nav className="navbar navbar-expand-md  ">
+      <nav className="navbar navbar-expand-lg  ">
   <div className=" container-fluid">
-    <Link className="navbar-brand d-md-none" to='/'>
+    <Link className="navbar-brand d-lg-none" to='/'>
       <img src={logo} alt=""/>
     </Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,19 +24,23 @@ const nav = () => {
           <Link className="nav-link active" to="/menu">Menu</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link active" to="/about">About</Link>
+          <Link className="nav-link active" to="/reservation"> Reservation</Link>
         </li>
-        <Link className="navbar-brand d-none d-md-block" to='/'>
+        
+        <Link className="navbar-brand d-none d-lg-block" to='/'>
           <img src={logo} alt=""/>
         </Link>
         <li className="nav-item">
-          <Link className="nav-link active" to="/reservation"> Reservation</Link>
+          <Link className="nav-link active" to="/about">About</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link active" to='/contact'>Franchise</Link>
+          <Link className="nav-link active" to='/franchise'>Franchise</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link active"to ='/gallery'>Gallery</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link active"to ='/contact'>Contact</Link>
         </li>
         {/* <li className="nav-item">
           <Link className="nav-link active" to="/signin"> Creat account</Link>
@@ -45,6 +49,7 @@ const nav = () => {
           <Link className="nav-link active" to="/signup">Sign up</Link>
         </li> */}
       </ul>
+      
     </div>
   </div>
 </nav>
