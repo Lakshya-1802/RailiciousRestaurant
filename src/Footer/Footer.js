@@ -6,7 +6,7 @@ const Footer = () => {
      
   <footer
           className="text-center text-lg-start text-white"
-          style={{backgroundColor:"#45526e"}}
+          style={{backgroundColor:"#4C632D"}}
           >
     {/* <!-- Grid container --> */}
     <div className="container p-4 pb-0">

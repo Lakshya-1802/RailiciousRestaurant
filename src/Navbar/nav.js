@@ -1,12 +1,12 @@
 import React from 'react'
 import "./nav.css"
-import logo from "./RALICIOUS_LOGO-removebg-preview.png"
+import logo from "./RALICIOUS_LOGO-removebg-preview2.png"
 import { Link } from 'react-router-dom'
 const nav = () => {
   return (
     <>
 
-      <div className='header ' style={{ color: "white", backgroundColor: "rgba(0,0,0,0.2)" }} >
+      <div className='header ' style={{ color: "white", backgroundColor: "#4C632D" }} >
         <nav className="navbar navbar-expand-lg  ">
           <div className=" container-fluid">
             <Link className="navbar-brand d-lg-none" to='/'>
@@ -16,15 +16,15 @@ const nav = () => {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse flex-row" id="navbarNav">
-              <ul className="navbar-nav col d-flex justify-content-end" style={{ fontWeight: "bold", fontSize: "1rem" }}>
+              <ul className="navbar-nav col d-flex justify-content-end" style={{color:"white", fontWeight: "bold", fontSize: "1rem" }}>
                 <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                  <Link className="nav-link active" aria-current="page" to="/" style={{color:"white"}}>Home</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link active" to="/menu">Menu</Link>
+                  <Link className="nav-link active" to="/menu" style={{color:"white"}}>Menu</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link active" to="/reservation"> Reservation</Link>
+                  <Link className="nav-link active" to="/reservation"style={{color:"white"}}> Reservation</Link>
                 </li>
               </ul>
               <div className='d-flex justify-content-center'>
@@ -35,16 +35,16 @@ const nav = () => {
               <ul className="navbar-nav col" style={{ fontWeight: "bold", fontSize: "1rem" }}>
 
                 <li className="nav-item">
-                  <Link className="nav-link active" to="/about">About</Link>
+                  <Link className="nav-link active" to="/about" style={{color:"white"}}>About</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link active" to='/franchise'>Franchise</Link>
+                  <Link className="nav-link active" to='/franchise'style={{color:"white"}}>Franchise</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link active" to='/gallery'>Gallery</Link>
+                  <Link className="nav-link active" to='/gallery' style={{color:"white"}}>Gallery</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link active" to='/contact'>Contact</Link>
+                  <Link className="nav-link active" to='/contact' style={{color:"white"}}>Contact</Link>
                 </li>
               </ul>
 
