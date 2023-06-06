@@ -8,8 +8,18 @@ import V5 from '../Images/Galleryimg/Videosgallery/video5.mp4'
 import V6 from '../Images/Galleryimg/Videosgallery/video6.mp4'
 import V7 from '../Images/Galleryimg/Videosgallery/video7.mp4'
 import V8 from '../Images/Galleryimg/Videosgallery/video8.mp4'
-// import V9 from '../Images/Galleryimg/Videosgallery/video9.mp4'
+
 const Videosgallery = () => {
+  const Videos = [
+    { id:1,img: "/Images/Galleryimg/Videosgallery/videos1.jpg"},
+    { id:2,img: "/Images/Galleryimg/Videosgallery/videos2.jpg"},
+    { id:3,img: "/Images/Galleryimg/Videosgallery/videos3.jpg"},
+    { id:4,img: "/Images/Galleryimg/Videosgallery/videos4.jpg"},
+    { id:5,img: "/Images/Galleryimg/Videosgallery/videos5.jpg"},
+    { id:6,img: "/Images/Galleryimg/Videosgallery/videos6.jpg"},
+    { id:7,img: "/Images/Galleryimg/Videosgallery/videos7.jpg"},
+    { id:8,img: "/Images/Galleryimg/Videosgallery/videos8.jpg"}
+    ]
 
   const videoRef1 = useRef(null);
   const videoRef2 = useRef(null);

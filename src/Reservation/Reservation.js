@@ -1,9 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './reservation.css'
-import { toast,ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
+import {useNavigate} from "react-router-dom";
 
 
 const Reservation = () => {
+    const navigate =useNavigate();
+    const [samp,setSamp] =useState("")
+    useEffect(()=>{
+        const authToken = localStorage?.getItem('Authorization')?.replaceAll('"', "");
+        if (authToken) {
+          setSamp(authToken);
+        }
+    },[])
     const [data,setData]= useState({
         title:"",
         discription:'',
@@ -15,38 +24,45 @@ const Reservation = () => {
         setData({...data,[name]:value})
     }
     const sendData =(e)=>{
-        e.preventDefault();
-        const { title, discription} = data;
-        // debugger;
+        if(samp==""){
+            e.preventDefault();
+            navigate("/signup")
+            console.log("hello");
+        }else{
 
-    fetch(`https://backend-production-e1c2.up.railway.app/api/notes/addnote`, {
-     method: "POST",
-     headers: {
-       "content-type": "application/json",
-       "Authorization": localStorage.getItem(`Authorization`).replaceAll('"', ""),
-     },
-
-     body: JSON.stringify({
-      title,
-      discription,
-     }),
-   })
-     .then((response) => response.json())
-     
-     .then((response) => {
-      //  console.log(response.sucess) 
-       toast.success(response?.sucess)      
-
-       if (!response?.sucess) {
-         throw Error(response.error)
-       }      
-      //  console.log(respo
-    })
-    .catch((err) => {
-      // setError(err.message);
-     //  toast.error(err);     
-
-    })
+            e.preventDefault();
+            const { title, discription} = data;
+            // debugger;
+            
+            fetch(`https://therailicious.com/api/notes/addnote`, {
+                method: "POST",
+                headers: {
+                    "content-type": "application/json",
+                    "Authorization": localStorage.getItem(`Authorization`)?.replaceAll('"', ""),
+                },
+                
+                body: JSON.stringify({
+                    title,
+                    discription,
+                }),
+            })
+            .then((response) => response.json())
+            
+            .then((response) => {
+                //  console.log(response.sucess) 
+                toast.success(response?.sucess)      
+                
+                if (!response?.sucess) {
+                    throw Error(response.error)
+                }      
+                //  console.log(respo
+            })
+            .catch((err) => {
+                // setError(err.message);
+                //  toast.error(err);     
+                
+            })
+        }
 
     }
   return (

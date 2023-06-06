@@ -2,9 +2,12 @@ import React, { useState } from 'react'
 // import { loginuser } from '../../harsh reducers/action-creators';
 // import { useDispatch } from "react-redux";
 import { toast,ToastContainer } from "react-toastify";
+import {Link, useNavigate} from "react-router-dom";
 
 const Siginin = () => {
 //   const dispatch =useDispatch()
+
+const navigate =useNavigate();
   const [creatData,setCreateData]=useState({
     name:'',
     email:'',
@@ -19,7 +22,7 @@ const Siginin = () => {
     e.preventDefault();
     const{name, email, password}=creatData;
     // dispatch(loginuser(creatData))
-    fetch(`https://backend-production-e1c2.up.railway.app/api/auth/createuser`, {
+    fetch(`https://therailicious.com/api/auth/createuser`, {
          method: "POST",
          headers: {
            "content-type": "application/json"
@@ -41,8 +44,9 @@ const Siginin = () => {
           //  console.log(response);
           //  console.log(response);
            toast.success(response?.message)
+           localStorage.setItem("Authorization", JSON.stringify(response.authtoken));
            // setMessage(response);
-          //  navigate("/sign-in")
+           navigate("/reservation")
    
          })
          .catch((error) => {

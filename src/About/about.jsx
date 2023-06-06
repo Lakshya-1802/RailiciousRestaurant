@@ -1,6 +1,4 @@
 import React from 'react'
-
-import video from './video.mp4'
 import './about.css'
 const about = () => {
   return (
@@ -12,7 +10,7 @@ const about = () => {
       <div className="col-md-6">
      
         <video  autoPlay loop muted>
-  <source src={video} type="video/mp4"/>
+  <source src="\Images\About\video.mp4" type="video/mp4"/>
 </video>
       </div>
       <div className="col-md-6">

@@ -19,6 +19,25 @@ import img16 from "../Images/Galleryimg/Foodgallery/Food16.jpg"
 
 
 const food = () => {
+  const food = [
+    { id:1,img: "/Images/Galleryimg/Foodgallery/Food1.jpg"},
+    { id:2,img: "/Images/Galleryimg/Foodgallery/Food2.jpg"},
+    { id:3,img: "/Images/Galleryimg/Foodgallery/Food3.jpg"},
+    { id:4,img: "/Images/Galleryimg/Foodgallery/Food4.jpg"},
+    { id:5,img: "/Images/Galleryimg/Foodgallery/Food5.jpg"},
+    { id:6,img: "/Images/Galleryimg/Foodgallery/Food6.jpg"},
+    { id:7,img: "/Images/Galleryimg/Foodgallery/Food7.jpg"},
+    { id:8,img: "/Images/Galleryimg/Foodgallery/Food8.jpg"},
+    { id:9,img: "/Images/Galleryimg/Foodgallery/Food9.jpg"},
+    { id:10,img:"/Images/Galleryimg/Foodgallery/Food10.jpg"},
+    { id:11,img:"/Images/Galleryimg/Foodgallery/Food11.jpg"},
+    { id:12,img:"/Images/Galleryimg/Foodgallery/Food12.jpg"},
+    { id:13,img:"/Images/Galleryimg/Foodgallery/Food13.jpg"},
+    { id:14,img:"/Images/Galleryimg/Foodgallery/Food14.jpg"},
+    { id:15,img:"/Images/Galleryimg/Foodgallery/Food15.jpg"},
+    { id:16,img:"/Images/Galleryimg/Foodgallery/Food16.jpg"}
+    ]
+
   return (
     <div className="container-fluid">
     <div ><h1 className='text-center'>Food</h1><hr/></div>

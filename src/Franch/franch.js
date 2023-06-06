@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './franch.css'
 import img from './franchise.jpg'
+import {useNavigate} from "react-router-dom";
+
 const franch = () => {
     return (
         <div>
@@ -14,7 +16,7 @@ const franch = () => {
           <div className="container content mt-5" >
                 <div className="row margin-bottom-30">                
                     <div className="col-md-6 " >
-                        <img src={img} style={{width:"100%",paddingBottom:"15px"}} />
+                        <img src={img} style={{width:"100%",paddingBottom:"15px"}} alt="gg" />
                     </div>
                     <div className="col-md-6 mb-margin-bottom-25 mr-5px" >
                         <h2 className='text-center' style={{color:"brown"}}>Get a Franchise Now</h2>

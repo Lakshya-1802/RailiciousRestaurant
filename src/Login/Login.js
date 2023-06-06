@@ -2,13 +2,15 @@ import React, { useEffect, useState } from 'react'
 // import { signItUp } from '../../harsh reducers/action-creators'
 // import { useDispatch } from "react-redux";
 import { toast,ToastContainer } from "react-toastify";
-import {useNavigate} from "react-router-dom";
-// import {Navigate} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
+import {Navigate} from "react-router-dom";
 
 const Login = () => {
   const isAthenticated =localStorage.getItem(`Authorization`)
   console.log(isAthenticated?.length);
   const navigate =useNavigate();
+  
+  // const navigate =useNavigate();
 //   const dispatch =useDispatch()
   const [signup,setSignUp]=useState({
     email:'',
@@ -26,7 +28,7 @@ const Login = () => {
 const { email, password} = signup;
       
         
-fetch(`https://backend-production-e1c2.up.railway.app/api/auth/login`, {
+fetch(`https://therailicious.com/api/auth/login`, {
  method: "POST",
  headers: {
    "content-type": "application/json",
@@ -101,7 +103,7 @@ fetch(`https://backend-production-e1c2.up.railway.app/api/auth/login`, {
             </div>
 
             <div>
-              <p className="mb-0">Don't have an account? <a href="#!" className="text-white-50 fw-bold">Sign Up</a>
+              <p className="mb-0">Don't have an account? <Link to="/signin " className="text-white-50 fw-bold">Sign Up</Link>
               </p>
             </div>
 

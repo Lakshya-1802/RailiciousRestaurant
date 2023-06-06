@@ -16,35 +16,35 @@ const nav = () => {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse flex-row" id="navbarNav">
-              <ul className="navbar-nav col d-flex justify-content-end" style={{color:"white", fontWeight: "bold", fontSize: "1rem" }}>
+              <ul className="navbar-nav col d-flex justify-content-end" style={{ color: "white", fontWeight: "bold", fontSize: "1rem" }}>
                 <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" to="/" style={{color:"white"}}>Home</Link>
+                  <Link className="nav-link active" aria-current="page" to="/" style={{ color: "white" }}>Home</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link active" to="/menu" style={{color:"white"}}>Menu</Link>
+                  <Link className="nav-link active" to="/menu" style={{ color: "white" }}>Menu</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link active" to="/reservation"style={{color:"white"}}> Reservation</Link>
+                  <Link className="nav-link active" to="/reservation" style={{ color: "white" }}> Reservation</Link>
                 </li>
               </ul>
               <div className='d-flex justify-content-center'>
                 <Link className="navbar-brand d-none d-lg-block " to='/'>
-                  <img src={logo} style={{ maxWidth: "100%", maxHeight: "100%", height: "4rem",width:"12rem" }} alt="" />
+                  <img src={logo} style={{ maxWidth: "100%", maxHeight: "100%", height: "4rem", width: "12rem" }} alt="" />
                 </Link>
               </div>
               <ul className="navbar-nav col" style={{ fontWeight: "bold", fontSize: "1rem" }}>
 
                 <li className="nav-item">
-                  <Link className="nav-link active" to="/about" style={{color:"white"}}>About</Link>
+                  <Link className="nav-link active" to="/about" style={{ color: "white" }}>About</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link active" to='/franchise'style={{color:"white"}}>Franchise</Link>
+                  <Link className="nav-link active" to='/franchise' style={{ color: "white" }}>Franchise</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link active" to='/gallery' style={{color:"white"}}>Gallery</Link>
+                  <Link className="nav-link active" to='/gallery' style={{ color: "white" }}>Gallery</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link active" to='/contact' style={{color:"white"}}>Contact</Link>
+                  <Link className="nav-link active" to='/contact' style={{ color: "white" }}>Contact</Link>
                 </li>
               </ul>
 

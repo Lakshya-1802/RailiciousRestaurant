@@ -6,12 +6,12 @@ import snacks from '../Images/Delicacies/Veg.jpg'
 import chinese from '../Images/Delicacies/chinese.jpg'
 import noodle from '../Images/Delicacies/noodle.jpg'
 import sizzler from '../Images/Delicacies/sizzler.jpg'
-import desert from '../Images/Delicacies/desert.jpg' 
-import drinks from '../Images/Delicacies/drinks.jpg' 
-import kebab from '../Images/Delicacies/kebab.jpg' 
-import paneer from '../Images/Delicacies/paneer.jpg' 
-import pizza from '../Images/Delicacies/pizza.jpg' 
-import veg from '../Images/Delicacies/veg (2).jpg' 
+import desert from '../Images/Delicacies/desert.jpg'
+import drinks from '../Images/Delicacies/drinks.jpg'
+import kebab from '../Images/Delicacies/kebab.jpg'
+import paneer from '../Images/Delicacies/paneer.jpg'
+import pizza from '../Images/Delicacies/pizza.jpg'
+import veg from '../Images/Delicacies/veg (2).jpg'
 
 
 
@@ -28,8 +28,8 @@ const Home = () => {
         backgroundSize: "cover",
         maxWidth: "100%",
         backgroundAttachment: "fixed",
-        backgroundPosition:" center cente",
-        
+        backgroundPosition: " center cente",
+
       }}>
         <div className="rotating-text-wrapper">
           <h2>Welcome to Railicious</h2>
@@ -96,16 +96,12 @@ const Home = () => {
             <img src={sizzler} alt="Delicacy 1" />
             <h3>Sizzlers</h3>
           </div>
-         
-
-
-
         </div>
       </section>
 
       {/* Testimonals */}
-      
-      <ReviewsCarousel/>
+
+      <ReviewsCarousel />
 
     </div>
   )
