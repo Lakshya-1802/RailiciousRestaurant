@@ -42,6 +42,15 @@ function App() {
     <Route path='/videogallery' element={<VideoGallery/>}/>
     <Route path='/applyform' element={<Applynow/>}/>
       </Routes>
+      <a
+        href="https://wa.me/919697924825"
+        class="whatsapp_float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {/* <i class="fa fa-whatsapp whatsnapp-icon"></i> */}
+        <i class="fa-brands fa-square-whatsapp whatsapp-icon " style={{color:"#0e9010"}}></i>
+      </a>
       <Footer/>
   </BrowserRouter>
      </> 
