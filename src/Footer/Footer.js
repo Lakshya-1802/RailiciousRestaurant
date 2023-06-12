@@ -20,9 +20,7 @@ const Footer = () => {
               Railicious
             </h6>
             <p>
-              Here you can use rows and columns to organize your footer
-              content. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit.
+              Welcome to our railway-themed restaurant, where nostalgia meets culinary excellence. 
             </p>
           </div>
           {/* <!-- Grid column --> */}
@@ -59,7 +57,7 @@ const Footer = () => {
               <Link to='/franchise'className="text-white">Franchise</Link>
             </p>
             <p>
-              <Link to='/gallery'className="text-white">Gallery</Link>
+              <Link to='/career'className="text-white">Career</Link>
             </p>
             
           </div>
