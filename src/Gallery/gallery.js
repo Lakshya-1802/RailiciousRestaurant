@@ -1,4 +1,6 @@
-import React, { useRef } from 'react';
+
+import React,{useState,useEffect,useRef} from 'react'
+
 import "./gallery.css"
 // import A1 from '../Images/Galleryimg/Gallerypage/A1.jpg'
 // import A2 from '../Images/Galleryimg/Gallerypage/A2.jpg'
@@ -15,6 +17,7 @@ import { Link } from 'react-router-dom'
 
 
 const Gallery = () => {
+  
   const ambience = [
     { id: 1, img: "/Images/Galleryimg/Gallerypage/A1.jpg" },
     { id: 2, img: "/Images/Galleryimg/Gallerypage/A2.jpg" },

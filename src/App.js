@@ -43,7 +43,7 @@ function App() {
     <Route path='/applyform' element={<Applynow/>}/>
       </Routes>
       <a
-        href="https://wa.me/919697924825"
+        href="https://wa.me/919958055600"
         class="whatsapp_float"
         target="_blank"
         rel="noopener noreferrer"
